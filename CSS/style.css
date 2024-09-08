@@ -160,7 +160,7 @@ h6 {
 /* =========== NavBar Css =========== */
 /* =========== Banner Css ===========  */
 #Banner {
-  background-image: url(/Images/Banner/background.png);
+  background-image: url(/Images/Banner/banner\ 1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,6 +360,15 @@ h6 {
   background-color: var(--black_background);
   padding: 90px 0;
 }
+.Popular__lowerLine {
+  width: 120px;
+  height: 3px;
+  background-color: var(--red_button_color);
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  left: 145px;
+}
 .PopularGame__bottomPart {
   display: flex;
   justify-content: space-between;
@@ -429,6 +438,15 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+.graterthan:hover {
+  background-color: var(--red_button_color);
+  border: none;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
 /* =========== Popular Game CSS ===========  */
 
 /* ============ LIVE Stream Css ============= */
@@ -453,8 +471,8 @@ h6 {
   background-color: var(--red_button_color);
   border: none;
   position: absolute;
-  bottom: 11px;
-  left: 142px;
+  bottom: 10px;
+  left: 140px;
 }
 .gamepart {
   display: flex;
@@ -462,13 +480,28 @@ h6 {
   align-items: center;
 }
 .gamephotocart1 {
+  position: relative;
   margin-top: 76px;
   position: relative;
   width: 427px;
+  height: 275px;
 }
-
+.gamephotocart1:hover .gamephotocart1__img {
+  padding: 10px 0;
+}
+.gamephotocart1:hover .gamephotocart1__img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
 .gamephotocart1__img {
   filter: grayscale(100%);
+  width: 427px;
+  height: 275px;
 }
 
 .gamepartcart1_overlay {
@@ -479,6 +512,13 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.gamephotocart1:hover .Overlay__h4,
+.gamephotocart1:hover .Overlaycion__a,
+.gamephotocart1:hover .discription__h4,
+.gamephotocart1:hover .discription__h42 {
+  color: var(--red_button_color);
+  transition: ease-in-out 0.3s;
 }
 .Overlay__h4 {
   font-size: 22px;
@@ -545,14 +585,14 @@ h6 {
   -o-border-radius: 50%;
 }
 /* part 2  */
-.img--chenge {
+/* .img--chenge {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
 .photocart1--change {
   width: 426px;
   height: 295px;
-}
+} */
 /* part 2  */
 
 /* gamepartBottom Css */
@@ -578,6 +618,15 @@ h6 {
   align-items: center;
   background-color: var(--box_black_backgroun_color);
   clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+}
+.BottomMatchbox1:hover,
+.BottomMatchbox1:hover .BottomMatchbox1__h4 {
+  background-color: var(--red_button_color);
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  -ms-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
 }
 .BottomMatchbox1__h4 {
   font-size: 32px;
@@ -609,6 +658,10 @@ h6 {
 }
 .LiveHeaderH2--change {
   text-align: right;
+}
+.black--friday {
+  bottom: 10px;
+  left: 110px;
 }
 .SaleBox {
   margin-top: 47px;
@@ -731,14 +784,14 @@ h6 {
   background-color: var(--black_background);
   padding: 100px 0;
 }
-.Lowerline--change {
+.Accesories_lowerline {
   width: 120px;
   height: 3px;
   background-color: var(--red_button_color);
   border: none;
   position: absolute;
-  bottom: 11px;
-  left: 194px;
+  bottom: 10px;
+  left: 205px;
 }
 /* ------accesories box css start from ----- */
 .Accesories {
@@ -828,6 +881,10 @@ h6 {
 #EliteTeam {
   background-color: #191919;
   padding: 100px 0;
+}
+.Lower--change {
+  bottom: 11px;
+  left: 149px;
 }
 .EliteTeamPart {
   display: flex;
@@ -929,7 +986,21 @@ h6 {
   align-items: end;
   column-gap: 20px;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1rem;
+  color: var(--white_color);
+}
+.OverlayRightside__a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--red_button_color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   color: var(--white_color);
 }
 .rightSideIcon {
@@ -947,6 +1018,10 @@ h6 {
 }
 .liveHeader--change {
   max-width: 493px;
+}
+.Lowerline--change {
+  bottom: 10px;
+  left: 351px;
 }
 .discription {
   margin-top: 92px;
@@ -1091,7 +1166,15 @@ h6 {
   -o-border-radius: 30px;
   z-index: 33;
 }
-
+.suscribeBtn:hover {
+  border: 2px solid var(--white_color);
+  background-color: var(--red_button_color);
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
 .fotterBottom {
   padding-bottom: 70px;
   display: flex;
@@ -1138,6 +1221,14 @@ h6 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.bottom__icon a:hover {
+  background-color: var(--red_button_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
 .bottom2 {
   display: flex;
   flex-direction: column;
@@ -1162,6 +1253,14 @@ h6 {
 }
 .links--chng {
   color: var(--red_button_color);
+}
+.bottom2__links:hover {
+  color: var(--white_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
 }
 
 .bottom3__h3 {
